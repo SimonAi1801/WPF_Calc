@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid ShowGridLines="true">
         <Grid.ColumnDefinitions >
-            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="30"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>
@@ -19,20 +19,40 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="30"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="10"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="10"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="10"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
+
+        <TextBox x:Name="txtResult" Grid.Column="7" Grid.Row="1"/>
+
+        <Button x:Name="btnNum1" Grid.Column="1" Grid.Row="2" Content="1" FontSize="20"/>
+        <Button x:Name="btnNum2" Grid.Column="3" Grid.Row="2" Content="2" FontSize="20"/>
+        <Button x:Name="btnNum3" Grid.Column="5" Grid.Row="2" Content="3" FontSize="20"/>
+        <Button x:Name="btnNum4" Grid.Column="1" Grid.Row="4" Content="4" FontSize="20"/>
+        <Button x:Name="btnNum5" Grid.Column="3" Grid.Row="4" Content="5" FontSize="20"/>
+        <Button x:Name="btnNum6" Grid.Column="5" Grid.Row="4" Content="6" FontSize="20"/>
+        <Button x:Name="btnNum7" Grid.Column="1" Grid.Row="6" Content="7" FontSize="20"/>
+        <Button x:Name="btnNum8" Grid.Column="3" Grid.Row="6" Content="8" FontSize="20"/>
+        <Button x:Name="btnNum9" Grid.Column="5" Grid.Row="6" Content="9" FontSize="20"/>
+        <Button x:Name="btnNum0" Grid.Column="3" Grid.Row="8" Content="0" FontSize="20"/>
+
+        <Button x:Name="btnPlus" Grid.Column="8" Grid.Row="2" Content="+" FontSize="20"/>
+        <Button x:Name="btnMinus" Grid.Column="8" Grid.Row="4" Content="-" FontSize="20"/>
+        <Button x:Name="btnMult" Grid.Column="8" Grid.Row="6" Content="*" FontSize="20"/>
+        <Button x:Name="btnDiv" Grid.Column="8" Grid.Row="8" Content="/" FontSize="20"/>
+        <Button x:Name="btnC" Grid.Column="10" Grid.Row="8" Content="C" FontSize="20"/>
+        <Button x:Name="btnEqual" Grid.Column="10" Grid.Row="2" Content="=" Grid.RowSpan="5" FontSize="20"/>
     </Grid>
 </Window>
