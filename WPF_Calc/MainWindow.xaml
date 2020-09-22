@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Calc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid ShowGridLines="true">
+        Title="MainWindow" Height="600" Width="700" MinWidth="700" MinHeight="600">
+    <Grid>
         <Grid.ColumnDefinitions >
             <ColumnDefinition Width="30"/>
             <ColumnDefinition Width="*"/>
@@ -35,7 +35,7 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
 
-        <TextBox x:Name="txtResult" Grid.Column="7" Grid.Row="1"/>
+        <TextBlock x:Name="txtResult" Grid.Column="7" Grid.Row="1" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <Button x:Name="btnNum1" Grid.Column="1" Grid.Row="2" Content="1" FontSize="20"/>
         <Button x:Name="btnNum2" Grid.Column="3" Grid.Row="2" Content="2" FontSize="20"/>
