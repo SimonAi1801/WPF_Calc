@@ -101,21 +101,21 @@ namespace WPF_Calc
                         {
                             if (_operator == "+")
                             {
-                                _result = Convert.ToInt32(_first) + Convert.ToInt32(_second);
+                                txtResult.Text = (Convert.ToInt32(_first) + Convert.ToInt32(_second)).ToString();
                             }
                             else if (_operator == "-")
                             {
-                                
+                                txtResult.Text = (Convert.ToInt32(_first) - Convert.ToInt32(_second)).ToString();
                             }
                             else if (_operator == "*")
                             {
-
+                                txtResult.Text = (Convert.ToInt32(_first) * Convert.ToInt32(_second)).ToString();
                             }
                             else if (_operator == "/")
                             {
-                                if (_second == "0")
+                                if (_second != "0")
                                 {
-                                
+                                    txtResult.Text = (Convert.ToInt32(_first) / Convert.ToInt32(_second)).ToString();
                                 }
                             }
                         }
